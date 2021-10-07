@@ -23,6 +23,6 @@ public class TestScriptableObjectsList : MonoBehaviour
     //}
     private void Start()
     {
-       Hashtable _info = ScriptableObjectSwitch.GetDataFromObjectInHastable(new CommonPassiveGun());
+       //Hashtable _info = ScriptableObjectSwitch.GetDataFromObjectInHastable(new CommonPassiveGun());
     }
 }
