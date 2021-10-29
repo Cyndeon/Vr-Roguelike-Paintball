@@ -13,9 +13,9 @@ public class GunBehavior : MonoBehaviour
 
     private void Start()
     {
-        if (gunStats)
-            bulletSpeed = gunStats.bulletSpeed;
-        else bulletSpeed = bulletSpeed <= 0 ? 1 : bulletSpeed;
+        //if (gunStats)
+        //    bulletSpeed = gunStats.bulletSpeed;
+       bulletSpeed = bulletSpeed <= 0 ? 1 : bulletSpeed;
     }
 
     public void Shoot()
