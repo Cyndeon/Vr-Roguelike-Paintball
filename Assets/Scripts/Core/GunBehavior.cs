@@ -16,13 +16,13 @@ public class GunBehavior : MonoBehaviour
     {
         player = PlayerManager.instance;
 
-        bulletSpeed = bulletSpeed <= 0 ? 1 : bulletSpeed;
+        bulletSpeed = bulletSpeed <= 0 ? 1 : player.attackShotSpeed;
     }
 
     public void Shoot()
     {
-        // use events for bullet effects?
         GameObject _bullet = Instantiate(m_bulletPrefab, m_shootingPoint.position, transform.rotation);
-        _bullet.GetComponent<Rigidbody>().AddForce(m_shootingPoint.forward * bulletSpeed);
+       
+        //_bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
     }
 }
